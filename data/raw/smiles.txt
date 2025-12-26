@@ -1,0 +1,5 @@
+# Place your SMILES strings here, one per line
+# Example:
+# CCO
+# CC(=O)O
+# c1ccccc1
