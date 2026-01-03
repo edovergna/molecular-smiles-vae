@@ -135,6 +135,10 @@ This tradeoff is **intentional** in this repository.
 - Metrics are intentionally lightweight
 - Readability and clarity are prioritized over extreme optimization
 
+Final take: this project really has taught me a lot on VAEs. The use of different losses, training parameters and approaches to them really changes the outcome, more than I could imagine. In the end, I settled with a model that is far from perfect (but still generates with quite good results) because this project was meant as a learning experience on my end. I was also testing the performance of my new laptop and I cannot complain, my older one would have required 100x the time for each experiment. Lastly, I want to thank anybody who reads this far (props to you), it really means a lot to me.
+
+And now, onto the next challenge!
+
 ---
 
 ## License
