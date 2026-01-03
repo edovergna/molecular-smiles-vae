@@ -1,0 +1,10 @@
+{
+  "seed": 42,
+  "epochs": 30,
+  "batch_size": 128,
+  "lr": 0.002,
+  "beta_kl": 1.0,
+  "train_frac": 0.8,
+  "val_frac": 0.1,
+  "raw_smiles_path": "data/raw/smiles.txt"
+}

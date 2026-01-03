@@ -17,10 +17,12 @@ As a result, **exact SMILES reconstruction** (encode → decode → identical st
 
 If your primary goal is *perfect reconstruction*, this setup is **not optimized for that use case**.
 
+---
 
 ## Dataset
 This project uses the **QM9 dataset**, which contains approximately **134k small organic molecules** with up to **nine heavy atoms** (C, N, O, F). Only the **canonical SMILES representations** are used to train a character-level variational autoencoder for molecular generation.
 
+---
 
 ## Requirements
 
@@ -30,6 +32,7 @@ This project uses the **QM9 dataset**, which contains approximately **134k small
 
 All required Python dependencies are listed in `requirements.txt`.
 
+---
 
 ## Setup
 
@@ -46,6 +49,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+---
 
 ## Data Format
 
@@ -61,6 +65,7 @@ c1ccccc1
 
 Invalid SMILES will break training.
 
+---
 
 ## Training
 
@@ -80,6 +85,7 @@ python train.py
 
 Model checkpoints and logs are saved automatically during training.
 
+---
 
 ## Sampling & Evaluation
 
@@ -91,6 +97,22 @@ python sample_prior.py
 
 This samples random latent vectors and decodes them into SMILES strings.
 
+---
+
+### Quick generation metrics
+
+```bash
+python quick_metrics.py
+```
+
+Reports:
+- Validity
+- Uniqueness
+- Novelty (compared to the training set)
+
+These metrics are **approximate** and intended for rapid iteration.
+
+---
 
 ### Visualize generated molecules
 
@@ -100,6 +122,7 @@ python visualize_generated.py
 
 Generates a small grid of molecules for visual inspection.
 
+---
 
 ### Latent space smoothness check
 
@@ -112,6 +135,7 @@ Interpolates between latent vectors to evaluate:
 - Semantic continuity
 - Latent collapse vs usage
 
+---
 
 ## Reconstruction vs Generation Tradeoff
 
@@ -127,6 +151,7 @@ Typically results in:
 
 This tradeoff is **intentional** in this repository.
 
+---
 
 ## Notes
 
@@ -140,3 +165,4 @@ This tradeoff is **intentional** in this repository.
 ## License
 
 This project is licensed under the MIT License – see the [LICENSE](LICENSE) file for details
+

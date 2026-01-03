@@ -1,0 +1,24 @@
+# PyTorch and deep learning
+torch>=2.0.0
+torchvision>=0.15.0
+torchaudio>=2.0.0
+
+# Data processing and scientific computing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Chemistry and molecule processing
+rdkit>=2023.3.1
+
+# Utilities
+tqdm>=4.65.0
+pyyaml>=6.0
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Development
+pytest>=7.3.0
+black>=23.0.0
+flake8>=6.0.0
