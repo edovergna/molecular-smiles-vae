@@ -1,4 +1,4 @@
-# Molecular SMILES VAE (PyTorch)
+# Molecular SMILES VAE
 
 A minimal **Variational Autoencoder (VAE)** for learning a latent space of **SMILES strings** and generating novel small molecules.
 
